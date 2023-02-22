@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Funds">
+   <top>
+      <AnchorPane prefHeight="447.0" prefWidth="465.0" style="-fx-background-color: #cae8ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="64.0" prefHeight="46.0" prefWidth="228.0" text="Current Funds" textAlignment="CENTER" textFill="#050830">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="ret" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#doneChecking" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: orange;" text="Main Menu" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font></Button>
+            <Label layoutX="153.0" layoutY="174.0" text="\$" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei" size="20.0" />
+               </font></Label>
+            <Label fx:id="tAmount" layoutX="178.0" layoutY="161.0" prefHeight="55.0" prefWidth="282.0" text="0.00" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei" size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="download" layoutX="105.0" layoutY="267.0" mnemonicParsing="false" onAction="#save" prefHeight="46.0" prefWidth="254.0" style="-fx-background-color: #5cb6f9;" text="Download Transaction History" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
